@@ -1,0 +1,111 @@
+/* Reset básico para eliminar márgenes, paddings y establecer box-sizing */
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Configuración inicial para todo el documento */
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Elimina las decoraciones de enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Listas sin estilo predeterminado */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Imágenes y contenido multimedia responsivo */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.table_index {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table_index caption {
+    height: 70px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.table_index caption h1 {
+    font-size: 18px;
+}
+
+.table_index th,
+.table_index td {
+    padding: 8px 12px;
+}
+
+.table_index th {
+    background-color: #f2f2f2;
+    color: #333;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+}
+
+.table_index tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Alternar colores para las filas */
+}
+
+.table_index tbody tr:hover {
+    background-color: #e0e0e0;
+    /* Cambiar color al pasar el mouse */
+}
+
+.table_index th,
+.table_index td {
+    border: 1px solid #ddd;
+    /* Bordes más ligeros */
+}
+
+.table_index tfoot th {
+    background-color: #333;
+    color: #fff;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e0e0e0;
+}
+
+.custom-table,
+.custom-table th,
+.custom-table td {
+    border: 1px solid black;
+}
+
+.custom-table th,
+.custom-table td {
+    width: 25%;
+    /* Cada columna ocupa el 25% del ancho total */
+    height: 100px;
+    /* Altura de las celdas */
+    background-color: #ddd;
+    /* Color de fondo gris claro */
+}
